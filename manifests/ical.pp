@@ -20,7 +20,7 @@ class zarafa::ical (
   $ssl_verify_file = $zarafa::ical::params::ssl_verify_file,
   $ssl_verify_path = $zarafa::ical::params::ssl_verify_path,
   $ssl_protocols = $zarafa::ical::params::ssl_protocols,
-  $ssl_ciphers = $zarafa::ical::params::ssl_cipers,
+  $ssl_ciphers = $zarafa::ical::params::ssl_ciphers,
   $ssl_prefer_server_ciphers = $zarafa::ical::params::ssl_prefer_server_ciphers,
   $server_timezone = $zarafa::ical::params::server_timezone,
   $default_charset = $zarafa::ical::params::default_charset,

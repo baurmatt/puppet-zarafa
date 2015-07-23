@@ -31,7 +31,7 @@ class zarafa::gateway (
   $ssl_verify_file = $zarafa::gateway::params::ssl_verify_file,
   $ssl_verify_path = $zarafa::gateway::params::ssl_verify_path,
   $ssl_protocols = $zarafa::gateway::params::ssl_protocols,
-  $ssl_ciphers = $zarafa::gateway::params::ssl_cipers,
+  $ssl_ciphers = $zarafa::gateway::params::ssl_ciphers,
   $ssl_prefer_server_ciphers = $zarafa::gateway::params::ssl_prefer_server_ciphers,
   $process_model = $zarafa::gateway::params::process_model,
   $log_method = $zarafa::gateway::params::log_method,
