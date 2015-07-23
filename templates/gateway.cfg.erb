@@ -65,6 +65,9 @@ imap_store_rfc822 = <%= @imap_store_rfc822 %>
 # Maximum count of allowed failed IMAP command counts per client
 imap_max_fail_commands = <%= @imap_max_fail_commands %>
 
+# Disable all plaintext authentications unless SSL/TLS is used
+disable_plaintext_auth = <%= @disable_plaintext_auth %>
+
 # File with RSA key for SSL
 ssl_private_key_file = <%= @ssl_private_key_file %>
 

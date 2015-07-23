@@ -23,6 +23,7 @@ class zarafa::gateway (
   $imap_expunge_on_delete = $zarafa::gateway::params::imap_expunge_on_delete,
   $imap_store_rfc822 = $zarafa::gateway::params::imap_store_rfc822,
   $imap_max_fail_commands = $zarafa::gateway::params::imap_max_fail_commands,
+  $disable_plaintext_auth = $zarafa::gateway::params::disable_plaintext_auth,
   $ssl_private_key_file = $zarafa::gateway::params::ssl_private_key_file,
   $ssl_certificate_file = $zarafa::gateway::params::ssl_certificate_file,
   $ssl_verify_client = $zarafa::gateway::params::ssl_verify_client,

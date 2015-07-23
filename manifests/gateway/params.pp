@@ -23,6 +23,7 @@ class zarafa::gateway::params {
   $imap_expunge_on_delete = "no"
   $imap_store_rfc822 = "yes"
   $imap_max_fail_commands = "10"
+  $disable_plaintext_auth = "no"
   $ssl_private_key_file = "/etc/zarafa/gateway/privkey.pem"
   $ssl_certificate_file = "/etc/zarafa/gateway/cert.pem"
   $ssl_verify_client = "no"
