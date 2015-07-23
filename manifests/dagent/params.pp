@@ -22,4 +22,5 @@ class zarafa::dagent::params {
   $plugin_path = "/var/lib/zarafa/dagent/plugins"
   $set_rule_headers = "yes"
   $no_double_forward = "no"
+  $default_charset = "iso-8859-15"
 }

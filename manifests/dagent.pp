@@ -22,6 +22,7 @@ class zarafa::dagent (
   $plugin_path = $zarafa::dagent::params::plugin_path,
   $set_rule_headers = $zarafa::dagent::params::set_rule_headers,
   $no_double_forward = $zarafa::dagent::params::no_double_forward,
+  $default_charset = $zarafa::dagent::params::default_charset,
 ) inherits zarafa::dagent::params {
   contain zarafa::dagent::install
   contain zarafa::dagent::config
