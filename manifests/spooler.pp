@@ -6,6 +6,7 @@ class zarafa::spooler (
   $run_as_group = $zarafa::spooler::params::run_as_group,
   $pid_file = $zarafa::spooler::params::pid_file,
   $running_path = $zarafa::spooler::params::running_path,
+  $coredump_enabled = $zarafa::spooler::params::coredump_enabled,
   $log_method = $zarafa::spooler::params::log_method,
   $log_level = $zarafa::spooler::params::log_level,
   $log_file = $zarafa::spooler::params::log_file,

@@ -6,6 +6,7 @@ class zarafa::spooler::params {
   $run_as_group = ""
   $pid_file = "/var/run/zarafa-spooler.pid"
   $running_path = "/"
+  $coredump_enabled = "no"
   $log_method = "file"
   $log_level = "3"
   $log_file = "/var/log/zarafa/spooler.log"

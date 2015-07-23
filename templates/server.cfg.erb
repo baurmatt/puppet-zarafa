@@ -154,8 +154,14 @@ server_ssl_ca_file = <%= @server_ssl_ca_file %>
 # Path with CA certificates, e.g. /etc/ssl/certs
 server_ssl_ca_path = <%= @server_ssl_ca_path %>
 
-# Accept SSLv2 only connections. Normally v3 connections are used.
-server_ssl_enable_v2 = <%= @server_ssl_enable_v2 %>
+# SSL protocols to use, set to '!SSLv2' for 'ssl_enable_v2 = no'
+ssl_protocols = <%= @ssl_protocols %> 
+
+# SSL ciphers to use, set to 'ALL' for backward compatibility
+ssl_ciphers = <%= @ssl_ciphers %>
+
+# Prefer the server's order of SSL ciphers over client's
+ssl_prefer_server_ciphers = <%= @ssl_prefer_server_ciphers %>
 
 # Path of SSL Public keys of clients
 sslkeys_path = <%= @sslkeys_path %>
