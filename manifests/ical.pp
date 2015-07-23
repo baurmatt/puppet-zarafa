@@ -22,7 +22,6 @@ class zarafa::ical (
   $ssl_protocols = $zarafa::ical::params::ssl_protocols,
   $ssl_ciphers = $zarafa::ical::params::ssl_cipers,
   $ssl_prefer_server_ciphers = $zarafa::ical::params::ssl_prefer_server_ciphers,
-  $ssl_enable_v2 = $zarafa::ical::params::ssl_enable_v2,
   $server_timezone = $zarafa::ical::params::server_timezone,
   $default_charset = $zarafa::ical::params::default_charset,
   $enable_ical_get = $zarafa::ical::params::enable_ical_get,

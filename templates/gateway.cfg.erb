@@ -25,6 +25,9 @@ pid_file = <%= @pid_file %>
 # run server in this path (when not using the -F switch)
 running_path = <%= @running_path %>
 
+# create memory coredumps upon crash in the running_path directory
+coredump_enabled = <%= @coredump_enabled %>
+
 # enable/disable POP3, and POP3 listen port
 pop3_enable = <%= @pop3_enable %>
 pop3_port = <%= @pop3_port %>
@@ -81,8 +84,14 @@ ssl_verify_client = <%= @ssl_verify_client %>
 ssl_verify_file = <%= @ssl_verify_file %>
 ssl_verify_path = <%= @ssl_verify_path %>
 
-# Accept SSLv2 only incoming connections
-ssl_enable_v2 = <%= @ssl_enable_v2 %>
+# SSL protocols to use, set to '!SSLv2' for 'ssl_enable_v2 = no'
+ssl_protocols = <%= @ssl_protocols %>
+
+# SSL ciphers to use, set to 'ALL' for backward compatibility
+ssl_ciphers = <%= @ssl_ciphers %>
+
+# Prefer the server's order of SSL ciphers over client's
+ssl_prefer_server_ciphers = <%= @ssl_prefer_server_ciphers %> 
 
 # Process model, using pthreads (thread) or processes (fork)
 process_model = <%= @process_model %>
