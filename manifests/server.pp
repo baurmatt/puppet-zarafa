@@ -216,5 +216,5 @@ inherits zarafa::server::params {
   contain zarafa::server::config
   contain zarafa::server::service
 
-  Class["mysql::server"] -> Class["zarafa::server::install"] -> Class["zarafa::server::config"] -> Class["zarafa::server::service"]
+  Class["zarafa::server::install"] -> Class["zarafa::server::config"] -> Class["zarafa::server::service"]
 }
