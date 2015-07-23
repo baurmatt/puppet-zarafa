@@ -14,6 +14,7 @@ class zarafa::dagent::params {
   $run_as_user = ""
   $run_as_group = ""
   $pid_file = "/var/run/zarafa-dagent.pid"
+  $coredump_enabled = "no"
   $spam_header_name = "X-Spam-Status"
   $spam_header_value = "Yes,"
   $archive_on_delivery = "no"

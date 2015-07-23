@@ -14,6 +14,7 @@ class zarafa::dagent (
   $run_as_user = $zarafa::dagent::params::run_as_user,
   $run_as_group = $zarafa::dagent::params::run_as_group,
   $pid_file = $zarafa::dagent::params::pid_file,
+  $coredump_enabled = $zarafa::dagent::params::coredump_enabled,
   $spam_header_name = $zarafa::dagent::params::spam_header_name,
   $spam_header_value = $zarafa::dagent::params::spam_header_value,
   $archive_on_delivery = $zarafa::dagent::params::archive_on_delivery,
