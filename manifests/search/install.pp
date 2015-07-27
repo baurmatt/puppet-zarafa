@@ -1,5 +1,5 @@
 class zarafa::search::install {
-  package { "zarafa-search":
+  package { "zarafa-search-plus":
     ensure => installed,
   }
 }
