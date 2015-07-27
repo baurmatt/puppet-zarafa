@@ -18,6 +18,7 @@ class zarafa::search (
   $log_timestamp = $zarafa::search::params::log_timestamp,
   $term_cache_size = $zarafa::search::params::term_cache_size,
   $index_processes = $zarafa::search::params::index_processes,
+  $search_engine = $zarafa::search::params::search_engine,
   $index_attachments = $zarafa::search::params::index_attachments,
   $index_attachment_max_size = $zarafa::search::params::index_attachment_max_size,
   $index_attachment_parser = $zarafa::search::params::index_attachment_parser,
