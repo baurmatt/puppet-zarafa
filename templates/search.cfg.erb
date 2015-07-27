@@ -21,6 +21,9 @@ pid_file = <%= @pid_file %>
 # run server in this path (when not using the -F switch)
 running_path = <%= @running_path %>
 
+# create memory coredumps upon crash in the running_path directory
+coredump_enabled = <%= @coredump_enabled %>
+
 # Limit the number of results returned (0 = don't limit)
 limit_results = <%= @limit_results %>
 
@@ -78,18 +81,10 @@ term_cache_size = <%= @term_cache_size %>
 # Only override this setting to expand the list
 #index_exclude_properties = 007D 0064 0C1E 0075 678E 678F
 
-##############################################################
-# INDEX OPTIMIZATION SCHEDULE
-
-# Start the optimization routine at this hour, in 24h notation.
-optimize_start = <%= @optimize_start %>
-
-# Stop the optimization routine at this hour, in 24h notation.
-# The current index that is being optimized is finished before stopping.
-optimize_stop = <%= @optimize_stop %>
-
-# Only optimize indexes which wern't optimized for the past X days.
-optimize_age = <%= @optimize_age %>
+# Number of indexing processes used during initial indexing
+# Setting this to a higher value can greatly speed initial indexing up,
+# especially when attachments are indexed.
+index_processes    = <%= @index_processes %>
 
 ##############################################################
 # ATTACHMENT INDEX SETTINGS
