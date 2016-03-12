@@ -7,10 +7,12 @@ class zarafa::spooler::params {
   $pid_file = "/var/run/zarafa-spooler.pid"
   $running_path = "/"
   $coredump_enabled = "no"
+  $tmp_path = "/tmp"
   $log_method = "file"
   $log_level = "3"
   $log_file = "/var/log/zarafa/spooler.log"
   $log_timestamp = "1"
+  $log_buffer_size = 4096
   $sslkey_file = "/etc/zarafa/ssl/spooler.pem"
   $sslkey_pass = "replace-with-server-cert-password"
   $max_threads = "5"
