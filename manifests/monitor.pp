@@ -8,6 +8,7 @@ class zarafa::monitor (
   $log_level = $zarafa::monitor::params::log_level,
   $log_file = $zarafa::monitor::params::log_file,
   $log_timestamp = $zarafa::monitor::params::log_timestamp,
+  $log_buffer_size = $zarafa::monitor::params::log_buffer_size,
   $sslkey_file = $zarafa::monitor::params::sslkey_file,
   $sslkey_pass = $zarafa::monitor::params::sslkey_pass,
   $quota_check_interval = $zarafa::monitor::params::quota_check_interval,

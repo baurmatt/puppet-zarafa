@@ -8,6 +8,7 @@ class zarafa::monitor::params {
   $log_level = "2"
   $log_file = "/var/log/zarafa/monitor.log"
   $log_timestamp = "1"
+  $log_buffer_size = 4096
   $sslkey_file = "/etc/zarafa/ssl/monitor.pem"
   $sslkey_pass = "replace-with-monitor-cert-password"
   $quota_check_interval = "15"
