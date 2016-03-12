@@ -14,6 +14,7 @@ class zarafa::ical::params {
   $log_level = "2"
   $log_file = "/var/log/zarafa/ical.log"
   $log_timestamp = "1"
+  $log_buffer_size = 4096
   $ssl_private_key_file = "/etc/zarafa/ical/privkey.pem"
   $ssl_certificate_file = "/etc/zarafa/ical/cert.pem"
   $ssl_verify_client = "no"

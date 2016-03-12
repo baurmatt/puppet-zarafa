@@ -14,6 +14,7 @@ class zarafa::ical (
   $log_level = $zarafa::ical::params::log_level,
   $log_file = $zarafa::ical::params::log_file,
   $log_timestamp = $zarafa::ical::params::log_timestamp,
+  $log_buffer_size = $zarafa::ical::params::log_buffer_size,
   $ssl_private_key_file = $zarafa::ical::params::ssl_private_key_file,
   $ssl_certificate_file = $zarafa::ical::params::ssl_certificate_file,
   $ssl_verify_client = $zarafa::ical::params::ssl_verify_client,
