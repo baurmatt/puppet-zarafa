@@ -34,10 +34,12 @@ class zarafa::gateway (
   $ssl_ciphers = $zarafa::gateway::params::ssl_ciphers,
   $ssl_prefer_server_ciphers = $zarafa::gateway::params::ssl_prefer_server_ciphers,
   $process_model = $zarafa::gateway::params::process_model,
+  $tmp_path = $zarafa::gateway::params::tmp_path,
   $log_method = $zarafa::gateway::params::log_method,
   $log_level = $zarafa::gateway::params::log_level,
   $log_file = $zarafa::gateway::params::log_file,
   $log_timestamp = $zarafa::gateway::params::log_timestamp,
+  $log_buffer_size = $zarafa::gateway::params::log_buffer_size,
 ) inherits zarafa::gateway::params {
   contain zarafa::gateway::install
   contain zarafa::gateway::config

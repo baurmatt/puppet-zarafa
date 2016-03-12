@@ -94,7 +94,13 @@ ssl_ciphers = <%= @ssl_ciphers %>
 ssl_prefer_server_ciphers = <%= @ssl_prefer_server_ciphers %> 
 
 # Process model, using pthreads (thread) or processes (fork)
+# Processes are potentially safer from a security point of view.
 process_model = <%= @process_model %>
+
+# For temporary files
+# consider mounting a `tmpfs' underneath this path (wherever you
+# point it to)
+tmp_path = <%= @tmp_path %>
 
 ##############################################################
 # GATEWAY LOG SETTINGS
@@ -110,3 +116,11 @@ log_file = <%= @log_file %>
 
 # Log timestamp - prefix each log line with timestamp in 'file' logging mode
 log_timestamp = <%= @log_timestamp %>
+
+# Buffer logging in what sized blocks.
+# Bigger buffers is better for the performance but it gives lag
+# when running e.g. multitail or 'tail -f' on the log-file. If
+# you want to directly see what is happing, set this to e.g. 1.
+# So when debugging: make it a small value, else set it to
+# 4096 or more.
+log_buffer_size  = <%= @log_buffer_size %>

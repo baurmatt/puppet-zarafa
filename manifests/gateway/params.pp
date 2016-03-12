@@ -35,8 +35,10 @@ class zarafa::gateway::params {
   $ssl_prefer_server_ciphers = "no"
   $ssl_enable_v2 = "no"
   $process_model = "fork"
+  $tmp_path = "/tmp"
   $log_method = "file"
   $log_level = "2"
   $log_file = "/var/log/zarafa/gateway.log"
   $log_timestamp = "1"
+  $log_buffer_size = 4096
 }
