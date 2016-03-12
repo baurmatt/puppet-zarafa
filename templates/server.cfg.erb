@@ -38,6 +38,10 @@ allow_local_users = <%= @allow_local_users %>
 # eg: local_admin_users = root vmail
 local_admin_users = <%= @local_admin_users %>
 
+# The user has full rights on a folder by default, uncomment the following line to disable this. 
+# owner_auto_full_access = false 
+owner_auto_full_access = <%= @owner_auto_full_access %>
+
 # e-mail address of the Zarafa System user
 system_email_address = <%= @system_email_address %>
 
@@ -68,6 +72,11 @@ license_socket = <%= @license_socket %>
 # terminating the request.
 license_timeout = <%= @license_timeout %>
 
+# for temporary files
+# consider mounting a `tmpfs' underneath this path (wherever you
+# point it to)
+tmp_path = <%= @tmp_path %>
+
 ##############################################################
 # LOG SETTINGS
 
@@ -82,6 +91,14 @@ log_level = <%= @log_level %>
 
 # Log timestamp - prefix each log line with timestamp in 'file' logging mode
 log_timestamp = <%= @log_timestamp %>
+
+# Buffer logging in what sized blocks.
+# Bigger buffers is better for the performance but it gives lag
+# when running e.g. multitail or 'tail -f' on the log-file. If
+# you want to directly see what is happing, set this to e.g. 1.
+# So when debugging: make it a small value, else set it to
+# 4096 or more.
+log_buffer_size  = <%= @log_buffer_size %>
 
 ##############################################################
 # AUDIT LOG SETTINGS
@@ -126,6 +143,13 @@ mysql_database = <%= @mysql_database %>
 # Where to place attachments. Value can be 'database' or 'files'
 attachment_storage = <%= @attachment_storage %>
 
+# Enable fsync as method to make sure attachments are stored on disk where
+# supported and will not be buffered by OS and/or filesystem. Please note
+# this setting will lower attachment write performance depending on your
+# environment but enhances data safety with disaster recovery.
+# Only affects 'files' attachment storage backend.
+attachment_files_fsync  = <%= @attachment_files_fsync %>
+
 # When attachment_storage is 'files', use this path to store the files
 attachment_path = <%= @attachment_path %>
 
@@ -153,6 +177,15 @@ server_ssl_ca_file = <%= @server_ssl_ca_file %>
 
 # Path with CA certificates, e.g. /etc/ssl/certs
 server_ssl_ca_path = <%= @server_ssl_ca_path %>
+
+# SSL protocols to use, set to '!SSLv2' for 'server_ssl_enable_v2 = no'
+server_ssl_protocols = <%= @server_ssl_protocols %>
+
+# SSL ciphers to use, set to 'ALL' for backward compatibility
+server_ssl_ciphers = <%= @server_ssl_ciphers %>
+
+# Prefer the server's order of SSL ciphers over client's
+server_ssl_prefer_server_ciphers = <%= @server_ssl_prefer_server_ciphers %>
 
 # Path of SSL Public keys of clients
 sslkeys_path = <%= @sslkeys_path %>
@@ -286,7 +319,7 @@ companyquota_warn      = <%= @companyquota_warn %>
 # Values: ldap, unix, db, ldapms (available in enterprise license)
 user_plugin = <%= @user_plugin %>
 
-# configuration file of the user plugin, examples can be found in /usr/share/zarafa/example-config
+# configuration file of the user plugin, examples can be found in /usr/share/doc/zarafa/example-config
 user_plugin_config = <%= @user_plugin_config %>
 
 # location of the zarafa plugins

@@ -11,6 +11,7 @@ class zarafa::server::params  {
   $database_engine = "mysql"
   $allow_local_users = "yes"
   $local_admin_users = "root"
+  $owner_auto_full_access = "true"
   $system_email_address = "postmaster@localhost"
   $run_as_user = ""
   $run_as_group = ""
@@ -20,10 +21,12 @@ class zarafa::server::params  {
   $session_timeout = "300"
   $license_socket = "/var/run/zarafa-licensed"
   $license_timeout = "10"
+  $tmp_path = "/tmp"
   $log_method = "file"
   $log_file = "/var/log/zarafa/server.log"
   $log_level = "2"
   $log_timestamp = "1"
+  $log_buffer_size = 4096
   $audit_log_enabled = "no"
   $audit_log_method = "syslog"
   $audit_log_file = "/var/log/zarafa/audit.log"
@@ -37,6 +40,7 @@ class zarafa::server::params  {
   $mysql_database = "zarafa"
   $attachment_storage = "files"
   $attachment_path = "/var/lib/zarafa/attachments"
+  $attachment_files_fsync = "yes"
   $attachment_compression = "6"
   $server_ssl_enabled = "no"
   $server_ssl_port = "237"
@@ -44,6 +48,9 @@ class zarafa::server::params  {
   $server_ssl_key_pass = "replace-with-server-cert-password"
   $server_ssl_ca_file = "/etc/zarafa/ssl/cacert.pem"
   $server_ssl_ca_path = ""
+  $server_ssl_protocols = '!SSLv2'
+  $server_ssl_ciphers = 'ALL:!LOW:!SSLv2:!EXP:!aNULL'
+  $server_ssl_prefer_server_ciphers = 'no'
   $sslkeys_path = "/etc/zarafa/sslkeys"
   $threads = "8"
   $watchdog_frequency = "1"
