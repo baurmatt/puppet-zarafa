@@ -8,6 +8,8 @@ class zarafa::dagent::params {
   $log_timestamp = "1"
   $log_raw_message = "no"
   $log_raw_message_path = "/tmp"
+  $log_buffer_size = 4096
+  $tmp_path = "/tmp"
   $server_bind = "127.0.0.1"
   $lmtp_port = "2003"
   $lmtp_max_threads = "20"

@@ -8,6 +8,8 @@ class zarafa::dagent (
   $log_timestamp = $zarafa::dagent::params::log_timestamp,
   $log_raw_message = $zarafa::dagent::params::log_raw_message,
   $log_raw_message_path = $zarafa::dagent::params::log_raw_message_path,
+  $log_buffer_size = $zarafa::dagent::params::log_buffer_size,
+  $tmp_path = $zarafa::dagent::params::tmp_path,
   $server_bind = $zarafa::dagent::params::server_bind,
   $lmtp_port = $zarafa::dagent::params::lmtp_port,
   $lmtp_max_threads = $zarafa::dagent::params::lmtp_max_threads,

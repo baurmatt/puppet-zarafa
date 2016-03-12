@@ -40,7 +40,22 @@ log_timestamp = <%= @log_timestamp %>
 log_raw_message = <%= @log_raw_message %>
 
 # Log raw messages path
+# consider mounting a `tmpfs' underneath this path
+# note that MySQL may store (large) files under /tmp
 log_raw_message_path = <%= @log_raw_message_path %>
+
+# Buffer logging in what sized blocks.
+# Bigger buffers is better for the performance but it gives lag
+# when running e.g. multitail or 'tail -f' on the log-file. If
+# you want to directly see what is happing, set this to e.g. 1.
+# So when debugging: make it a small value, else set it to
+# 4096 or more.
+log_buffer_size  = <%= @log_buffer_size %>
+
+# for temporary files
+# consider mounting a `tmpfs' underneath this path (wherever you
+# point it to)
+tmp_path = <%= @tmp_path %>
 
 ##############################################################
 # DAGENT LMTP SETTINGS
